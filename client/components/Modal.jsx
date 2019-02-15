@@ -54,13 +54,13 @@ class Modal extends React.Component {
               </ItemDiv>
             </GalleryActionItem>
             <GalleryActionItem>
-              <ItemDiv onClick={this.closeModal}>
+              <ItemDiv id="close" onClick={this.closeModal}>
                 <i className="material-icons icon-light md-30">close</i>
               </ItemDiv>
             </GalleryActionItem>
           </ModalGalleryActions>
         </ModalBar>
-        <ModalButton className="back" onClick={() => { btnBack(id) }}><i className="material-icons md-36 icon-light back-icon">arrow_back_ios</i></ModalButton>
+        <ModalButton id="back" onClick={() => { btnBack(id) }}><i className="material-icons md-36 icon-light back-icon">arrow_back_ios</i></ModalButton>
         <Content>
           <ModalCounter>
             {id + 1}
@@ -69,7 +69,7 @@ class Modal extends React.Component {
           </ModalCounter>
           <img src={link} alt="fullsize version" />
         </Content>
-        <ModalButton className="forward" onClick={() => { btnNext(id) }}><i className="material-icons md-36 icon-light">arrow_forward_ios</i></ModalButton>
+        <ModalButton id="forward" onClick={() => { btnNext(id) }}><i className="material-icons md-36 icon-light">arrow_forward_ios</i></ModalButton>
         <ModalFooter>
           <PropertyDetails>
             {'For Sale: $'}

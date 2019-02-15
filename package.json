@@ -11,7 +11,8 @@
     "start": "nodemon server/index.js",
     "build": "webpack -d --watch",
     "generate-images": "node util/generator.js",
-    "seed": "node util/seeder.js"
+    "seed": "node util/seeder.js",
+    "test": "jest"
   },
   "dependencies": {
     "@babel/core": "^7.2.2",
@@ -21,8 +22,11 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
     "express": "^4.16.4",
     "faker": "^4.1.0",
+    "jest": "^24.1.0",
     "mongoose": "^5.4.10",
     "morgan": "^1.9.1",
     "mysql2": "^1.6.4",
@@ -40,6 +44,7 @@
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "sinon": "^7.2.3"
   }
 }
