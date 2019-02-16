@@ -14,15 +14,13 @@ describe('Modal', () => {
   });
 
   it('navigates buttons correctly', () => {
-    const component = mount(<Modal 
+    const component = mount(<Modal
       details={{}}
       display="flex"
       link="https://s3-us-west-1.amazonaws.com/xillow-talk-photos/property_photos/sample45.jpg"
       btnBack={jest.fn()}
       btnNext={jest.fn()}
     />);
-
-    modal.closeModal = jest.fn();
 
     const btnBack = sinon.spy(component.prop('btnBack'));
     const btnNext = sinon.spy(component.prop('btnNext'));
